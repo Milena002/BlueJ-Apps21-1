@@ -1,0 +1,19 @@
+Course computing_and_web_development = new Course("BT1CWD1", "BSc Computing and web development");
+computing_and_web_development.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CWD1: BSc Computing and web development
+
+Student milena = new Student("Milena", 22143664);
+milena.print();
+ Student ID: 22143664 Name: Milena
+milena.enrol(computing_and_web_development);
+milena.printCourse();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CWD1: BSc Computing and web development
+
