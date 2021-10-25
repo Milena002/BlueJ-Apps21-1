@@ -31,28 +31,29 @@ public class Module
         return code;
     }
     
-     public String getTitle()
+    public String getTitle()
     {
         return title;
     }
 
     public int getCredit()
     {
-    return credit;
+        return credit;
     }
+    
     public void setCredit (int credit)
     {
         this.credit=credit;
     }
-/**
- * print the details of the module which indludes the code,
- * title and credits
- * 
- */
+    /**
+     * print the details of the module which indludes the code,
+     * title and credits
+     * 
+     */
     public void print()
     {
     System.out.println(" Module Code: " + code + ":" + title );
-    System.out.println("Credit: " + credit);
+    System.out.println     ("Credit: " + credit);
     System.out.println();
     }
     
