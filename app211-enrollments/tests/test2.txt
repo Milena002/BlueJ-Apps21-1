@@ -1,53 +1,14 @@
-Course computing_and_web_development = new Course("BT1CWD1", "BSc Computing and web development");
-computing_and_web_development.print();
- --------------------------------
-   App211: Course Details
- --------------------------------
+Module CO452 = new Module("CO452", "Programing concepts");
+CO452.print();
+ Module Code: CO452:Programing concepts
+Credit: 0
 
- Course Code: BT1CWD1: BSc Computing and web development
-
-Student milena = new Student("Milena", 22143664);
-milena.print();
- Student ID: 22143664 Name: Milena
-milena.enrol(computing_and_web_development);
-milena.printCourse();
- --------------------------------
-   App211: Course Details
- --------------------------------
-
- Course Code: BT1CWD1: BSc Computing and web development
-
-Module programming = new Module();
-Module programming = new Module();
-Module programming = new Module("CO452", "Programming Concepts");
-Module module1 = new Module("CO452", "Programming");
-module1.getCode()
-    returned String "CO452"
-module1.getTitle()
-    returned String "Programming"
-Module module1 = new Module("CO452", "Programming");
-module1.setCredit(30);
-Module module1 = new Module("CO452", "Programming Credits");
-module1.print();
- Module Code: CO452:Programming Credits Credit15
-
-Module module2 = new Module("CO452", "Programming Concepts");
-module2.print();
- Module Code: CO452:Programming Concepts Credit15
-
-Course computing_and_web_development = new Course("BT1CWD1", "BSc (Hons) Computing & Web development");
-Module module1 = new Module("CO452", "Programming concepts");
-computing_and_web_development.addModule(module1);
-computing_and_web_development.print();
- --------------------------------
-   App211: Course Details
- --------------------------------
-
- Course Code: BT1CWD1: BSc (Hons) Computing & Web development
+CO452.setCredit(15);
+CO452.print();
+ Module Code: CO452:Programing concepts
+Credit: 15
 
 Course computing_and_web_development = new Course("BT1CWD1", "Computing and web development");
-Module programming = new Module("CO452", "Programming Concepts");
-computing_and_web_development.addModule(programming);
 computing_and_web_development.print();
  --------------------------------
    App211: Course Details
@@ -55,8 +16,15 @@ computing_and_web_development.print();
 
  Course Code: BT1CWD1: Computing and web development
 
- Module Code: CO452:Programming Concepts Credit 15
+    Exception occurred.
+computing_and_web_development.addModule(CO452);
+computing_and_web_development.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
 
-Course computing_and_web_development = new Course("BT1CWD1", "Computing and web development");
-Module programming = new Module("CO452", "Programming Concepts");
-computing_and_web_development.addModule(programming);
+ Course Code: BT1CWD1: Computing and web development
+
+ Module Code: CO452:Programing concepts
+Credit: 15
+
