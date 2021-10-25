@@ -45,6 +45,7 @@ public class Module
     {
         this.credit=credit;
     }
+    
     /**
      * print the details of the module which indludes the code,
      * title and credits
@@ -52,9 +53,8 @@ public class Module
      */
     public void print()
     {
-    System.out.println(" Module Code: " + code + ":" + title );
-    System.out.println     ("Credit: " + credit);
-    System.out.println();
+        System.out.println(" Module Code: " + code + ":" + title );
+        System.out.println("Credit: " + credit);
+        System.out.println();
     }
-    
 }
