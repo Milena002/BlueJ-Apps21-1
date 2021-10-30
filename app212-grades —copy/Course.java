@@ -49,7 +49,8 @@ public class Course
      */
     public void createModules()
     {
-        Module moduleCO452 = new Module("CO452","Programming Concepts");addModule(moduleCO452);
+        Module moduleCO452 = new Module("CO452","Programming Concepts");
+        addModule(moduleCO452);
          Module moduleCO456 = new Module("CO456","Web Development");
         addModule(moduleCO456);
         Module moduleCO454 = new Module("CO454","Digital Technologies and Professional Practice");
@@ -101,7 +102,7 @@ public class Course
     public void print()
     {
         System.out.println();
-        System.out.println(" Course "+ code +":"+ title);
+        System.out.println(" Course " + code + ": " + title);
         //System.out.println();
         
         printModules();
@@ -112,14 +113,15 @@ public class Course
      */
     public void printModules()
     {
-        System.out.println("    Course       Modules");
-        System.out.println("    -----------------------");
+        System.out.println("\tCourse Modules");
+        System.out.println("\t--------------");
         System.out.println();
         for(Module module : modules)
         {
-           System.out.println("    " + module.getCode()+"   " + module.getTitle()); 
-           //System.out.println("    " +module.getTitle());
+           System.out.println("\t" + module.getCode()); 
+           System.out.println("\t" + module.getTitle());
         }
-    
+        
+        System.out.println();
     }
 }
