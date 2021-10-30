@@ -1,59 +1,21 @@
+Course computing_and_web_development = new Course("BT1CWD1", "Bsc Computing and web development");
+computing_and_web_development.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CWD1: Bsc Computing and web development
+
+    Exception occurred.
 Student milena = new Student("Milena", 22143664);
 milena.print();
- Student ID: 22143664, Milena
-Course computingwebdev = new Course("BT1CWD1", "Computing and Web Development");
-milena.enrol(computingwebdev);
+ Student ID: 22143664 Name: Milena
+milena.enrol(computing_and_web_development);
 milena.printCourse();
- Student ID: 22143664, Milena
+ --------------------------------
+   App211: Course Details
+ --------------------------------
 
- Course BT1CWD1:Computing and Web Development
-    Course       Modules
-    -----------------------
+ Course Code: BT1CWD1: Bsc Computing and web development
 
-    CO452   Programming Concepts
-    CO456   Web Development
-    CO454   Digital Technologies and Professional Practice
-    CO450   Computer Architectures
-Module co452 = new Module("CO452", "Programming Concepts");
-Module co456 = new Module("CO456", "Web Development");
-Module co454 = new Module("CO454", "Digital Technologies and Professional Practice");
-Module co450 = new Module("CO450", "Computer Architectures");
-computingwebdev.addModule(co452);
-computingwebdev.addModule(co456);
-computingwebdev.addModule(co454);
-computingwebdev.addModule(co450);
-ModuleMark milenaCo452Mark = new ModuleMark(co452);
-ModuleMark milenaCo456Mark = new ModuleMark(co456);
-ModuleMark milenaCo454Mark = new ModuleMark(co454);
-ModuleMark milenaCo450Mark = new ModuleMark(co450);
-milenaCo452Mark.setMark(70);
-milenaCo456Mark.setMark(50);
-milenaCo454Mark.setMark(80);
-milenaCo450Mark.setMark(55);
-milena.addMark(milenaCo452Mark);
-milena.addMark(milenaCo456Mark);
-milena.addMark(milenaCo454Mark);
-milena.addMark(milenaCo450Mark);
-milena.printTranscript();
- ------------------------------------
- App21-02: Exam Board Transcript 2021
-        by student name
- ------------------------------------
- Student ID: 22143664, Milena
-
- Course BT1CWD1:Computing and Web Development
-    Course       Modules
-    -----------------------
-
-    CO452   Programming Concepts
-    CO456   Web Development
-    CO454   Digital Technologies and Professional Practice
-    CO450   Computer Architectures
-
-
- ---- 	 -------------------- 	 ------	 ---- 	 -----
- Code 	 Module 		Credit	 Mark 	 Grade
- ---- 	 -------------------- 	 ------	 ---- 	 -----
-
-
- No Final Course Grade Yet!
+    Exception occurred.
