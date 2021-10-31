@@ -114,7 +114,6 @@ public class Course
     {
         System.out.println();
         System.out.println(" Course "+ code +": "+ title);
-        //System.out.println();
         
         printModules();
         System.out.println();
@@ -125,17 +124,10 @@ public class Course
      */
     public void printModules()
     {
-        //System.out.println("    Course       Modules");
-        //System.out.println("    -----------------------");
-        //System.out.println();
         for(Module module : modules)
         {
            module.print(); 
            module.printCredit();
-            //System.out.println("    " + module.getCode()+" :  " 
-           //+ module.getTitle() + module.printCredit()); 
-           //System.out.println("    " +module.getTitle());
-           //module.printCredit();
         }
     
     }

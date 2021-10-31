@@ -130,12 +130,6 @@ public class Student
         {
             mark.print();
             System.out.println("\t"+ course.convertToGrade(mark.getValue()));
-            //System.out.println("\t   " +course.convertToGrade(mark.getValue()));
-            //System.out.println(mark.getModule().getCode());
-            //System.out.print(" :");
-            //System.out.println(mark.getModule().getTitle());
-            //System.out.print("\t");
-            //System.out.println(mark.getCredit());
             
         }
         
