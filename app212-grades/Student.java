@@ -24,7 +24,7 @@ public class Student
      */
     public Student()
     {
-        this("Milena", 22143664);
+        this("Milena Michalska", 22143664);
     }
     
     /**
@@ -88,16 +88,7 @@ public class Student
      */
     public void awardTestMarks()
     {
-        int value =75;
-        for(Module module : course.modules)
-        {
-            ModuleMark mark = new ModuleMark(module);
-            mark.setMark(75);
-            
-            value= value-10;
-            
-            marks.add(mark);
-        }
+        
         
     }
     
@@ -137,11 +128,14 @@ public class Student
     {
         for(ModuleMark mark : marks)
         {
-            System.out.println(mark.getModule().getCode());
-            System.out.print(" :");
-            System.out.println(mark.getModule().getTitle());
-            System.out.print("\t");
-            System.out.println(mark.getCredit());
+            mark.print();
+            System.out.println("\t"+ course.convertToGrade(mark.getValue()));
+            //System.out.println("\t   " +course.convertToGrade(mark.getValue()));
+            //System.out.println(mark.getModule().getCode());
+            //System.out.print(" :");
+            //System.out.println(mark.getModule().getTitle());
+            //System.out.print("\t");
+            //System.out.println(mark.getCredit());
             
         }
         
@@ -152,17 +146,18 @@ public class Student
     {
         System.out.println(" ------------------------------------");
         System.out.println(" App21-02: Exam Board Transcript 2021");
-        System.out.println("        by student name");
+        System.out.println("        by Milena Michalska");
         System.out.println(" ------------------------------------");
         
         printCourse();
         
         System.out.println();
         System.out.println();
-        System.out.println(" ---- \t -------------------- \t ------\t ---- \t -----");
-        System.out.println(" Code \t Module \t\tCredit\t Mark \t Grade");
-        System.out.println(" ---- \t -------------------- \t ------\t ---- \t -----");
+        System.out.println(" ---- \t ------------------\t ------\t ---- \t -----");
+        System.out.println(" Code \t       Module      \t Credit\t Mark \t Grade");
+        System.out.println(" ---- \t ------------------\t ------\t ---- \t -----");
         
+        printModules();
        
         Grades finalGrade = course.calculateGrade(marks);
         

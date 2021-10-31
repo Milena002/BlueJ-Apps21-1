@@ -1,0 +1,32 @@
+Course computingwebdev = new Course("BT1CWD1", "Computing and Web Development");
+Student milena = new Student("Milena", 22143664);
+milena.enrol(computingwebdev);
+milena.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by Milena Michalska
+ ------------------------------------
+ Student ID: 22143664, Milena
+
+ Course BT1CWD1: Computing and Web Development
+
+ CO452:Programming Concepts  	  15 credits
+ CO456:Web Development       	  15 credits
+ CO454:Digital Technologies  	  15 credits
+ CO450:Computer Architectures	  15 credits
+
+
+ ---- 	 ------------------	 ------	 ---- 	 -----
+ Code 	       Module      	 Credit	 Mark 	 Grade
+ ---- 	 ------------------	 ------	 ---- 	 -----
+
+ CO452:Programming Concepts  	  15	70	A
+
+ CO456:Web Development       	  15	60	B
+
+ CO454:Digital Technologies  	  15	50	C
+
+ CO450:Computer Architectures	  15	40	D
+
+
+ Final Course Grade = C

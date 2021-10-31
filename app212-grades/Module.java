@@ -44,7 +44,7 @@ public class Module
     public void print()
     {
         System.out.println();
-        System.out.print(" " + code + ": " + "\t" + title);
+        System.out.print(" " + code + ":"+ "" +title);
     }
     
     /**
