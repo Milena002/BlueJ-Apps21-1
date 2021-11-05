@@ -1,0 +1,33 @@
+Product ip13 = new Product(100, "iPhone13");
+ip13.print();
+ ID 100: iPhone13 stock level: 0
+ip13.decreaseQuantity(1);
+ip13.print();
+ ID 100: iPhone13 stock level: 0
+ip13.increaseQuantity(4);
+ip13.print();
+ ID 100: iPhone13 stock level: 4
+ip13.decreaseQuantity(1);
+ip13.print();
+ ID 100: iPhone13 stock level: 3
+Product sgA12 = new Product(104, "Samsung Galaxy A12");
+sgA12.decreaseQuantity(1);
+sgA12.print();
+ ID 104: Samsung Galaxy A12 stock level: 0
+sgA12.increaseQuantity(5);
+sgA12.print();
+ ID 104: Samsung Galaxy A12 stock level: 5
+sgA12.decreaseQuantity(1);
+sgA12.print();
+ ID 104: Samsung Galaxy A12 stock level: 4
+StockList stockLis1 = new StockList();
+stockLis1.add(ip13);
+stockLis1.add(sgA12);
+stockLis1.print();
+
+ Milena's Stock List
+ ====================
+
+ ID 100: iPhone13 stock level: 3
+ ID 104: Samsung Galaxy A12 stock level: 4
+
