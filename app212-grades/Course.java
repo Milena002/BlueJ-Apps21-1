@@ -73,7 +73,7 @@ public class Course
      */
     public Grades convertToGrade(int mark)
     {
-        if(mark >= 0 && mark <= 39)
+        if(mark >= 0 && mark <= Grades.F.getValue())
             return Grades.F;
         else if( mark <= 49)
             return Grades.D;
