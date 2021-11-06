@@ -4,8 +4,8 @@
  * The demonstration becomes properly functional as
  * the StockManager class is completed.
  * 
- * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * @author Milena Michalska
+ * @version 1.0, date 06/11/2021
  */
 public class StockDemo
 {
@@ -13,19 +13,22 @@ public class StockDemo
     private StockList stock;
 
     /**
-     * Create a StockManager and populate it with at least
-     * 10 sample products.
+     * Here is my list of 10 created products (in alphabetical order).
      */
     public StockDemo(StockList stock)
     {
         this.stock = stock;
-        
-        // Add at least 10 products, they must be unique to you
-        // Make sure the ids are sequential numbers
-        
-        stock.add(new Product(101, "Samsung Galaxy S20"));
-        stock.add(new Product(102, "Apple iPhone 12"));
-        stock.add(new Product(103, "Google Pixel 4A"));
+    
+        stock.add(new Product(100, "Apple iPhone 11"));
+        stock.add(new Product(101, "Apple iPhone 12"));
+        stock.add(new Product(102, "Apple iPhone 13"));
+        stock.add(new Product(103, "Google Pixel 6"));
+        stock.add(new Product(104, "Google Pixel 4a"));
+        stock.add(new Product(105, "Oppo A15"));
+        stock.add(new Product(106, "Oppo Find X3 Neo"));
+        stock.add(new Product(107, "Samsung Galaxy S21"));
+        stock.add(new Product(108, "Samsung Galaxy Z Fold3"));
+        stock.add(new Product(109, "Samsung Galaxy A12"));
     }
     
     /**
