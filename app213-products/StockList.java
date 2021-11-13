@@ -4,7 +4,7 @@ import java.util.ArrayList;
  * Manage the stock in a business.
  * The stock is described by zero or more Products.
  * 
- * @author Milena Michalska
+ * @motified by  Milena Michalska
  * @version 05.11.2021
  */
 public class StockList
@@ -46,6 +46,17 @@ public class StockList
      */
     public void buyProduct(int productID, int amount)
     {
+        Product product = findProduct(productID);
+        
+        if(product == null)
+        {
+            System.out.println("NOT FOUND");
+        }
+        else
+        {
+            product.increaseQuantity(amount);
+            // System.out.println (" Bought " + amount + " " + product.getName);
+        }
     }
     
     /**
@@ -53,7 +64,12 @@ public class StockList
      * if not found return null
      */
     public Product findProduct(int productID)
-    {
+    {   for(Product product : stock)
+        {
+            if(product.getID() == productID)
+            return product;
+            
+        }
         return null;
     }
     
