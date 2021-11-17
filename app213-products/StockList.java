@@ -44,18 +44,29 @@ public class StockList
      * @param id The ID of the product.
      * @param amount The amount to increase the quantity by.
      */
-    public void buyProduct(int productID, int amount)
+    public void buyProduct(int productID, int buyQuantity)
     {
-        Product product = findProduct(productID);
+        //System.out.println("Buying Quantities of Stock\n");
         
-        if(product == null)
+        Product product = findProduct(productID);
+      
+        int stockQuantity = product.getQuantity();
+        if(product != null) 
         {
-            System.out.println("NOT FOUND");
-        }
+            if(stockQuantity <100)
+            {
+                product.increaseQuantity(buyQuantity);
+                System.out.println( "Bought " + buyQuantity + " of " + product.getName());
+            }
+            else 
+            {
+                System.out.println( "Not enough shelf space for product: " + 
+                product.getName() + " !");
+            }
+         }
         else
         {
-            product.increaseQuantity(amount);
-            // System.out.println (" Bought " + amount + " " + product.getName);
+            System.out.println("Couldn't find this product");
         }
     }
     
@@ -64,44 +75,63 @@ public class StockList
      * if not found return null
      */
     public Product findProduct(int productID)
-    {   for(Product product : stock)
+    {   
+        for(Product product : stock)
         {
             if(product.getID() == productID)
+            {
             return product;
-            
+            }
         }
         return null;
     }
-    
     
     /**
      * Sell one of the given product.
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
      */
-    public void sellProduct(int productID)
+    public void sellProduct(int productID, int sellQuantity)
     {
+        //System.out.println("Selling Quantities of Stock\n");
+        
         Product product = findProduct(productID);
+        int stockQuantity = product.getQuantity();
         
         if(product != null) 
         {
-            if(product.getQuantity() > 0)
+            if(stockQuantity > 0)
             {
-                product.decreaseQuantity(1);
-                
-                // printout message
+                if(stockQuantity > sellQuantity)
+                {
+                    product.decreaseQuantity(sellQuantity);
+                    System.out.println( product.getName()  + sellQuantity + " " + " Sold "
+                    );
+                }
+                else
+                {
+                    System.out.println( product.getName() + " Not sold " + sellQuantity +
+                    " because" + " We have only " + product.getQuantity());
+                }
             }
             else
             {
-                // printout message
+                System.out.println( product.getName() + "is out of stock" );
             }
         }
         else
         {
-            // printout message 
+            System.out.println("Couldn't find this product");
         }
     }    
-
+    
+    public void search(String phrase)
+    {
+        if (phrase.contains("Samsung"))
+        {
+            
+        }
+    }
     
     /**
      * Locate a product with the given ID, and return how
@@ -112,7 +142,12 @@ public class StockList
      */
     public int numberInStock(int productID)
     {
-        return 0;
+        Product product = findProduct(productID);
+        if (product !=null)
+        {
+            System.out.println(product.toString());
+        }
+            return 0;
     }
 
     /**

@@ -12,7 +12,7 @@ public class StockDemo
 {
     // The stock manager.
     private StockList stock;
-    private Random generator;
+    private Random generator = new Random();
 
     /**
      * Here is my list of 10 created products (in alphabetical order).
@@ -20,7 +20,7 @@ public class StockDemo
     public StockDemo(StockList stock)
     {
         this.stock = stock;
-    
+         //here is  my list of 10 different products:
         stock.add(new Product(100, "Apple iPhone 11"));
         stock.add(new Product(101, "Apple iPhone 12"));
         stock.add(new Product(102, "Apple iPhone 13"));
@@ -53,6 +53,10 @@ public class StockDemo
         stock.print();        
     }
     
+    /**
+     * This method will buy different quqntities of each of the product
+     * in the stock list
+     */
     private void buyProducts()
     {
         Product product;
@@ -67,13 +71,33 @@ public class StockDemo
             }
             else 
             {
-                quantity++;
+                quantity = generator.nextInt(20);
                 stock.buyProduct(id,quantity);
             }
         }
     }
         
-private void sellProducts()
+    /**
+     * This method will sell different quqntities of each of the product
+     * in the stock list
+
+     */private void sellProducts()
     {
+        Product product;
+        int quantity =1;
+        
+        for (int id= 100;  id <= 109; id++)
+        {
+            product= stock.findProduct(id);
+            if(product == null)
+            {
+                System.out.println ("Product" + id + "Not Found");
+            }
+            else 
+            {
+                quantity = generator.nextInt(20);
+                stock.sellProduct(id,quantity);
+            }
+        }
     }    
 }
