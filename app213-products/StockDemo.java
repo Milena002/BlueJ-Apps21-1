@@ -21,16 +21,16 @@ public class StockDemo
     {
         this.stock = stock;
          //here is  my list of 10 different products:
-        stock.add(new Product(100, "Apple iPhone 11"));
-        stock.add(new Product(101, "Apple iPhone 12"));
-        stock.add(new Product(102, "Apple iPhone 13"));
-        stock.add(new Product(103, "Google Pixel 6"));
-        stock.add(new Product(104, "Google Pixel 4a"));
-        stock.add(new Product(105, "Oppo A15"));
-        stock.add(new Product(106, "Oppo Find X3 Neo"));
-        stock.add(new Product(107, "Samsung Galaxy S21"));
+        stock.add(new Product(100, "Apple iPhone 11       "));
+        stock.add(new Product(101, "Apple iPhone 12       "));
+        stock.add(new Product(102, "Apple iPhone 13       "));
+        stock.add(new Product(103, "Google Pixel 6        "));
+        stock.add(new Product(104, "Google Pixel 4a       "));
+        stock.add(new Product(105, "Oppo A15              "));
+        stock.add(new Product(106, "Oppo Find X3 Neo      "));
+        stock.add(new Product(107, "Samsung Galaxy S21    "));
         stock.add(new Product(108, "Samsung Galaxy Z Fold3"));
-        stock.add(new Product(109, "Samsung Galaxy A12"));
+        stock.add(new Product(109, "Samsung Galaxy A12    "));
     }
     
     /**
@@ -71,7 +71,7 @@ public class StockDemo
             }
             else 
             {
-                quantity = generator.nextInt(20);
+                quantity = generator.nextInt(10);
                 stock.buyProduct(id,quantity);
             }
         }
@@ -95,7 +95,7 @@ public class StockDemo
             }
             else 
             {
-                quantity = generator.nextInt(20);
+                quantity = generator.nextInt(10);
                 stock.sellProduct(id,quantity);
             }
         }

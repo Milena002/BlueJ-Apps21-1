@@ -1,0 +1,106 @@
+StockList stockLis1 = new StockList();
+StockDemo stockDem1 = new StockDemo(stockLis1);
+stockDem1.runDemo();
+
+ Milena's Stock List
+ ====================
+
+ ID 100: Apple iPhone 11        stock level: 0
+ ID 101: Apple iPhone 12        stock level: 0
+ ID 102: Apple iPhone 13        stock level: 0
+ ID 103: Google Pixel 6         stock level: 0
+ ID 104: Google Pixel 4a        stock level: 0
+ ID 105: Oppo A15               stock level: 0
+ ID 106: Oppo Find X3 Neo       stock level: 0
+ ID 107: Samsung Galaxy S21     stock level: 0
+ ID 108: Samsung Galaxy Z Fold3 stock level: 0
+ ID 109: Samsung Galaxy A12     stock level: 0
+
+Bought Apple iPhone 11          Quantity: 3
+Bought Apple iPhone 12          Quantity: 5
+Bought Apple iPhone 13          Quantity: 5
+Bought Google Pixel 6           Quantity: 2
+Bought Google Pixel 4a          Quantity: 1
+Bought Oppo A15                 Quantity: 9
+Bought Oppo Find X3 Neo         Quantity: 7
+Bought Samsung Galaxy S21       Quantity: 9
+Bought Samsung Galaxy Z Fold3   Quantity: 6
+Bought Samsung Galaxy A12       Quantity: 5
+
+ Milena's Stock List
+ ====================
+
+ ID 100: Apple iPhone 11        stock level: 3
+ ID 101: Apple iPhone 12        stock level: 5
+ ID 102: Apple iPhone 13        stock level: 5
+ ID 103: Google Pixel 6         stock level: 2
+ ID 104: Google Pixel 4a        stock level: 1
+ ID 105: Oppo A15               stock level: 9
+ ID 106: Oppo Find X3 Neo       stock level: 7
+ ID 107: Samsung Galaxy S21     stock level: 9
+ ID 108: Samsung Galaxy Z Fold3 stock level: 6
+ ID 109: Samsung Galaxy A12     stock level: 5
+
+ Not sold  4 Quantity of:  Apple iPhone 11        In stock only avaliable: 3
+     Sold  2 Quantity of:  Apple iPhone 12       
+     Sold  3 Quantity of:  Apple iPhone 13       
+     Sold  1 Quantity of:  Google Pixel 6        
+ Not sold  3 Quantity of:  Google Pixel 4a        In stock only avaliable: 1
+ Not sold  9 Quantity of:  Oppo A15               In stock only avaliable: 9
+ Not sold  8 Quantity of:  Oppo Find X3 Neo       In stock only avaliable: 7
+     Sold  3 Quantity of:  Samsung Galaxy S21    
+ Not sold  9 Quantity of:  Samsung Galaxy Z Fold3 In stock only avaliable: 6
+ Not sold  6 Quantity of:  Samsung Galaxy A12     In stock only avaliable: 5
+
+ Milena's Stock List
+ ====================
+
+ ID 100: Apple iPhone 11        stock level: 3
+ ID 101: Apple iPhone 12        stock level: 3
+ ID 102: Apple iPhone 13        stock level: 2
+ ID 103: Google Pixel 6         stock level: 1
+ ID 104: Google Pixel 4a        stock level: 1
+ ID 105: Oppo A15               stock level: 9
+ ID 106: Oppo Find X3 Neo       stock level: 7
+ ID 107: Samsung Galaxy S21     stock level: 6
+ ID 108: Samsung Galaxy Z Fold3 stock level: 6
+ ID 109: Samsung Galaxy A12     stock level: 5
+
+stockLis1.removeproduct(104);
+Removed product number: 104
+stockLis1.print();
+
+ Milena's Stock List
+ ====================
+
+ ID 100: Apple iPhone 11        stock level: 3
+ ID 101: Apple iPhone 12        stock level: 3
+ ID 102: Apple iPhone 13        stock level: 2
+ ID 103: Google Pixel 6         stock level: 1
+ ID 105: Oppo A15               stock level: 9
+ ID 106: Oppo Find X3 Neo       stock level: 7
+ ID 107: Samsung Galaxy S21     stock level: 6
+ ID 108: Samsung Galaxy Z Fold3 stock level: 6
+ ID 109: Samsung Galaxy A12     stock level: 5
+
+stockLis1.search("Samsung");
+ ID 107: Samsung Galaxy S21     stock level: 6
+ ID 108: Samsung Galaxy Z Fold3 stock level: 6
+ ID 109: Samsung Galaxy A12     stock level: 5
+stockLis1.lowstock("5");
+<><><><><><><><><><><><><><><><><><><><><>
+ Products with low stock (less than 5) :  
+<><><><><><><><><><><><><><><><><><><><><>
+ ID 100: Apple iPhone 11        stock level: 3
+<><><><><><><><><><><><><><><><><><><><><>
+ Products with low stock (less than 5) :  
+<><><><><><><><><><><><><><><><><><><><><>
+ ID 101: Apple iPhone 12        stock level: 3
+<><><><><><><><><><><><><><><><><><><><><>
+ Products with low stock (less than 5) :  
+<><><><><><><><><><><><><><><><><><><><><>
+ ID 102: Apple iPhone 13        stock level: 2
+<><><><><><><><><><><><><><><><><><><><><>
+ Products with low stock (less than 5) :  
+<><><><><><><><><><><><><><><><><><><><><>
+ ID 103: Google Pixel 6         stock level: 1

@@ -75,7 +75,6 @@ public class Product
         return " ID " + id + ": " +  name + " stock level: " + quantity;
     }
 
-    
     public void print()
     {
         System.out.println(toString());

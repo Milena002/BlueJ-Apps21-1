@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+import java.util.Random;
 /**
  * Manage the stock in a business.
  * The stock is described by zero or more Products.
@@ -11,7 +11,8 @@ public class StockList
 {
     // A list of the products.
     private ArrayList<Product> stock;
-
+    private Random generator = new Random();
+    
     /**
      * Initialise the stock manager.
      */
@@ -37,6 +38,22 @@ public class StockList
         buyProduct(productID, 1);
     }
     
+    /**
+     * A method to remove the product from stock list by ID number
+     */
+    public void removeproduct(int productID)
+    {
+        Product product = findProduct(productID);
+        if(product != null)
+        {
+            stock.remove(product);
+            System.out.println("Removed product number: " + productID);
+        }
+        else
+        {
+            System.out.println ("This product number not exist");
+        }
+    }
     
     /**
      * Buy a quantity of a particular product.
@@ -56,7 +73,8 @@ public class StockList
             if(stockQuantity <100)
             {
                 product.increaseQuantity(buyQuantity);
-                System.out.println( "Bought " + buyQuantity + " of " + product.getName());
+                System.out.println( "Bought " + product.getName()+ "  " + " Quantity: "
+                + buyQuantity); 
             }
             else 
             {
@@ -105,18 +123,18 @@ public class StockList
                 if(stockQuantity > sellQuantity)
                 {
                     product.decreaseQuantity(sellQuantity);
-                    System.out.println( product.getName()  + sellQuantity + " " + " Sold "
-                    );
+                    System.out.println( "     Sold " + " " + sellQuantity + " Quantity of:  " + 
+                    product.getName() );
                 }
                 else
                 {
-                    System.out.println( product.getName() + " Not sold " + sellQuantity +
-                    " because" + " We have only " + product.getQuantity());
+                    System.out.println( " Not sold " + " " + sellQuantity + " Quantity of:  " +
+                    product.getName() + " In stock only avaliable: " + product.getQuantity()); 
                 }
             }
             else
             {
-                System.out.println( product.getName() + "is out of stock" );
+                System.out.println(" Out of stock -----------  " +  product.getName() );
             }
         }
         else
@@ -127,9 +145,12 @@ public class StockList
     
     public void search(String phrase)
     {
-        if (phrase.contains("Samsung"))
+        for (Product product : stock)
         {
-            
+            if(product.getName().contains(phrase))
+            {
+                System.out.println(product.toString());
+            }
         }
     }
     
@@ -149,9 +170,25 @@ public class StockList
         }
             return 0;
     }
-
+    
     /**
-     * Print details of the given product. If found,
+     * This is a method, when printing a products whose stock are low ( for example <5)
+     */
+    public void lowstock(String phrase)
+    {
+        for(Product product : stock)
+        {
+            if(product.getQuantity() < 5 )
+            {
+                System.out.println("<><><><><><><><><><><><><><><><><><><><><>");
+                System.out.println(" Products with low stock (less than 5) :  ");
+                System.out.println("<><><><><><><><><><><><><><><><><><><><><>");
+                System.out.println(product);
+            }
+        }
+    }
+    
+    /** Print details of the given product. If found,
      * its name and stock quantity will be shown.
      * @param id The ID of the product to look for.
      */
