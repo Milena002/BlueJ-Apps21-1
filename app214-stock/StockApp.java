@@ -13,7 +13,7 @@ public class StockApp
     
     private StockList stock;
     
-    public Product product;
+    //public Product product;
     
     /**
      * Constructor for objects of class StockApp
@@ -86,8 +86,17 @@ public class StockApp
         System.out.println();
         
         int id = reader.getInt("Please enter a product ID > ");
-        stock.removeproduct(id);
-         System.out.println("Product has been removed from the list ");   
+        Product product = stock.findProduct(id);
+        
+        if(product != null)
+        {
+            stock.removeproduct(id);
+         System.out.println("Product has been removed from the list "); 
+        }
+        else
+        {
+            System.out.println ("This product number not exist !"); 
+        }
     }
     
     /**
