@@ -1,0 +1,149 @@
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > remove
+Removing an old Product
+
+Please enter a product ID > 
+108
+Removed product number: 108
+Product has been removed from the list 
+
+ Milena's Stock List
+ ====================
+
+ ID 100: Apple iPhone 11        stock level: 0
+ ID 101: Apple iPhone 12        stock level: 0
+ ID 102: Apple iPhone 13        stock level: 0
+ ID 103: Google Pixel 6         stock level: 0
+ ID 104: Google Pixel 4a        stock level: 0
+ ID 105: Oppo A15               stock level: 0
+ ID 106: Oppo Find X3 Neo       stock level: 0
+ ID 107: Samsung Galaxy S21     stock level: 0
+ ID 109: Samsung Galaxy A12     stock level: 0
+
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > 
+Your input is blank!
+
+Please enter your choice > remove
+Removing an old Product
+
+Please enter a product ID > 
+111
+This product number not exist !
+
+ Milena's Stock List
+ ====================
+
+ ID 100: Apple iPhone 11        stock level: 0
+ ID 101: Apple iPhone 12        stock level: 0
+ ID 102: Apple iPhone 13        stock level: 0
+ ID 103: Google Pixel 6         stock level: 0
+ ID 104: Google Pixel 4a        stock level: 0
+ ID 105: Oppo A15               stock level: 0
+ ID 106: Oppo Find X3 Neo       stock level: 0
+ ID 107: Samsung Galaxy S21     stock level: 0
+ ID 109: Samsung Galaxy A12     stock level: 0
+
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > 
+Your input is blank!
+
+Please enter your choice > buy
+Buying a Product(s)
+
+
+ Milena's Stock List
+ ====================
+
+ ID 100: Apple iPhone 11        stock level: 0
+ ID 101: Apple iPhone 12        stock level: 0
+ ID 102: Apple iPhone 13        stock level: 0
+ ID 103: Google Pixel 6         stock level: 0
+ ID 104: Google Pixel 4a        stock level: 0
+ ID 105: Oppo A15               stock level: 0
+ ID 106: Oppo Find X3 Neo       stock level: 0
+ ID 107: Samsung Galaxy S21     stock level: 0
+ ID 109: Samsung Galaxy A12     stock level: 0
+
+Please enter a product ID that you want to buy: > 
+100
+Please enter the amount that you want to buy: > 
+4
+Bought Apple iPhone 11          Quantity: 4
+Product 100 --- Apple iPhone 11       has been bought -- Quantity: 4
+
+ Milena's Stock List
+ ====================
+
+ ID 100: Apple iPhone 11        stock level: 4
+ ID 101: Apple iPhone 12        stock level: 0
+ ID 102: Apple iPhone 13        stock level: 0
+ ID 103: Google Pixel 6         stock level: 0
+ ID 104: Google Pixel 4a        stock level: 0
+ ID 105: Oppo A15               stock level: 0
+ ID 106: Oppo Find X3 Neo       stock level: 0
+ ID 107: Samsung Galaxy S21     stock level: 0
+ ID 109: Samsung Galaxy A12     stock level: 0
+
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > 
+Your input is blank!
+
+Please enter your choice >     VM terminated.

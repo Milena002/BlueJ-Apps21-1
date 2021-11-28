@@ -82,7 +82,7 @@ public class StockApp
         }
         else if(choice.equals("re-stock"))
         {
-          System.out.println("Re-stocking a Product(s) whose stock is low (<5)");
+          System.out.println("Re-stocking a Product(s) whose stock is low ");
           int qty  = reader.getInt("Please enter the amount you want to re-stock >");
           stock.restock(qty);
         }

@@ -1,0 +1,148 @@
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > print
+
+ Milena's Stock List
+ ====================
+
+ ID 100: Apple iPhone 11        stock level: 0
+ ID 101: Apple iPhone 12        stock level: 0
+ ID 102: Apple iPhone 13        stock level: 0
+ ID 103: Google Pixel 6         stock level: 0
+ ID 104: Google Pixel 4a        stock level: 0
+ ID 105: Oppo A15               stock level: 0
+ ID 106: Oppo Find X3 Neo       stock level: 0
+ ID 107: Samsung Galaxy S21     stock level: 0
+ ID 108: Samsung Galaxy Z Fold3 stock level: 0
+ ID 109: Samsung Galaxy A12     stock level: 0
+
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > quit
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > add
+Adding a new Product
+
+Please enter a product ID: > 
+111
+Please enter a product name: > 
+Your input is blank!
+
+Please enter a product name: > Xiomi Redimo Note 10  
+Product 111 --- Xiomi Redimo Note 10   has been added to the list 
+
+ Milena's Stock List
+ ====================
+
+ ID 100: Apple iPhone 11        stock level: 0
+ ID 101: Apple iPhone 12        stock level: 0
+ ID 102: Apple iPhone 13        stock level: 0
+ ID 103: Google Pixel 6         stock level: 0
+ ID 104: Google Pixel 4a        stock level: 0
+ ID 105: Oppo A15               stock level: 0
+ ID 106: Oppo Find X3 Neo       stock level: 0
+ ID 107: Samsung Galaxy S21     stock level: 0
+ ID 108: Samsung Galaxy Z Fold3 stock level: 0
+ ID 109: Samsung Galaxy A12     stock level: 0
+ ID 111: Xiomi Redimo Note 10   stock level: 0
+
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > add
+Adding a new Product
+
+Please enter a product ID: > 
+108
+Please enter a product name: > 
+Your input is blank!
+
+Please enter a product name: > Xiomi Redimi 9AT      
+Product 108 --- Xiomi Redimi 9AT       has been added to the list 
+
+ Milena's Stock List
+ ====================
+
+ ID 100: Apple iPhone 11        stock level: 0
+ ID 101: Apple iPhone 12        stock level: 0
+ ID 102: Apple iPhone 13        stock level: 0
+ ID 103: Google Pixel 6         stock level: 0
+ ID 104: Google Pixel 4a        stock level: 0
+ ID 105: Oppo A15               stock level: 0
+ ID 106: Oppo Find X3 Neo       stock level: 0
+ ID 107: Samsung Galaxy S21     stock level: 0
+ ID 108: Samsung Galaxy Z Fold3 stock level: 0
+ ID 109: Samsung Galaxy A12     stock level: 0
+ ID 111: Xiomi Redimo Note 10   stock level: 0
+ ID 108: Xiomi Redimi 9AT       stock level: 0
+
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > 

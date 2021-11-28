@@ -120,7 +120,7 @@ public class StockList
         {
             if(stockQuantity > 0)
             {
-                if(stockQuantity > sellQuantity)
+                if(stockQuantity >= sellQuantity)
                 {
                     product.decreaseQuantity(sellQuantity);
                     System.out.println( "     Sold " + " " + sellQuantity + " Quantity of:  " + 
