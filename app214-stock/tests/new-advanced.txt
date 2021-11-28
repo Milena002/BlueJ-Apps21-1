@@ -1,0 +1,59 @@
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > re-stock
+Re-stocking a Product(s) whose stock is low 
+Please enter the amount you want to re-stock >
+10
+Bought Apple iPhone 11          Quantity: 10
+ ID 100: Apple iPhone 11        stock level: 10
+Bought Apple iPhone 12          Quantity: 10
+ ID 101: Apple iPhone 12        stock level: 10
+Bought Apple iPhone 13          Quantity: 10
+ ID 102: Apple iPhone 13        stock level: 10
+Bought Google Pixel 6           Quantity: 10
+ ID 103: Google Pixel 6         stock level: 10
+Bought Google Pixel 4a          Quantity: 10
+ ID 104: Google Pixel 4a        stock level: 10
+Bought Oppo A15                 Quantity: 10
+ ID 105: Oppo A15               stock level: 10
+Bought Oppo Find X3 Neo         Quantity: 10
+ ID 106: Oppo Find X3 Neo       stock level: 10
+Bought Samsung Galaxy S21       Quantity: 10
+ ID 107: Samsung Galaxy S21     stock level: 10
+Bought Samsung Galaxy Z Fold3   Quantity: 10
+ ID 108: Samsung Galaxy Z Fold3 stock level: 10
+Bought Samsung Galaxy A12       Quantity: 10
+ ID 109: Samsung Galaxy A12     stock level: 10
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > 
+Your input is blank!
+
+Please enter your choice > quit

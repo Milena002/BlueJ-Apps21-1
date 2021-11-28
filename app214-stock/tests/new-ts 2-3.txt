@@ -1,0 +1,68 @@
+quit
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > search
+Searching a Product(s) by name or phrase
+
+Here is product(s) contains this phrase
+Please enter a phrase,the products you are looking for  > Samsung
+ ID 107: Samsung Galaxy S21     stock level: 0
+ ID 108: Samsung Galaxy Z Fold3 stock level: 0
+ ID 109: Samsung Galaxy A12     stock level: 0
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > low stock
+Printing the list of products with low stock ( <5) 
+Apple iPhone 11       has low stock
+Apple iPhone 12       has low stock
+Apple iPhone 13       has low stock
+Google Pixel 6        has low stock
+Google Pixel 4a       has low stock
+Oppo A15              has low stock
+Oppo Find X3 Neo      has low stock
+Samsung Galaxy S21    has low stock
+Samsung Galaxy Z Fold3has low stock
+Samsung Galaxy A12    has low stock
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > quit

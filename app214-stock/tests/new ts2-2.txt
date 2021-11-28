@@ -1,0 +1,196 @@
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > remove
+Removing an old Product
+
+Please enter a product ID > 
+105
+Removed product number: 105
+Product has been removed from the list 
+
+ Milena's Stock List
+ ====================
+
+ ID 100: Apple iPhone 11        stock level: 0
+ ID 101: Apple iPhone 12        stock level: 0
+ ID 102: Apple iPhone 13        stock level: 0
+ ID 103: Google Pixel 6         stock level: 0
+ ID 104: Google Pixel 4a        stock level: 0
+ ID 106: Oppo Find X3 Neo       stock level: 0
+ ID 107: Samsung Galaxy S21     stock level: 0
+ ID 108: Samsung Galaxy Z Fold3 stock level: 0
+ ID 109: Samsung Galaxy A12     stock level: 0
+
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > 
+Your input is blank!
+
+Please enter your choice > buy
+Buying a Product(s)
+
+
+ Milena's Stock List
+ ====================
+
+ ID 100: Apple iPhone 11        stock level: 0
+ ID 101: Apple iPhone 12        stock level: 0
+ ID 102: Apple iPhone 13        stock level: 0
+ ID 103: Google Pixel 6         stock level: 0
+ ID 104: Google Pixel 4a        stock level: 0
+ ID 106: Oppo Find X3 Neo       stock level: 0
+ ID 107: Samsung Galaxy S21     stock level: 0
+ ID 108: Samsung Galaxy Z Fold3 stock level: 0
+ ID 109: Samsung Galaxy A12     stock level: 0
+
+Please enter a product ID that you want to buy: > 
+103
+Please enter the amount that you want to buy: > 
+6
+Bought Google Pixel 6           Quantity: 6
+Product 103 --- Google Pixel 6        has been bought -- Quantity: 6
+
+ Milena's Stock List
+ ====================
+
+ ID 100: Apple iPhone 11        stock level: 0
+ ID 101: Apple iPhone 12        stock level: 0
+ ID 102: Apple iPhone 13        stock level: 0
+ ID 103: Google Pixel 6         stock level: 6
+ ID 104: Google Pixel 4a        stock level: 0
+ ID 106: Oppo Find X3 Neo       stock level: 0
+ ID 107: Samsung Galaxy S21     stock level: 0
+ ID 108: Samsung Galaxy Z Fold3 stock level: 0
+ ID 109: Samsung Galaxy A12     stock level: 0
+
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > 
+Your input is blank!
+
+Please enter your choice > sell
+Buying a Product(s)
+
+
+ Milena's Stock List
+ ====================
+
+ ID 100: Apple iPhone 11        stock level: 0
+ ID 101: Apple iPhone 12        stock level: 0
+ ID 102: Apple iPhone 13        stock level: 0
+ ID 103: Google Pixel 6         stock level: 6
+ ID 104: Google Pixel 4a        stock level: 0
+ ID 106: Oppo Find X3 Neo       stock level: 0
+ ID 107: Samsung Galaxy S21     stock level: 0
+ ID 108: Samsung Galaxy Z Fold3 stock level: 0
+ ID 109: Samsung Galaxy A12     stock level: 0
+
+Please enter a product ID that you want to sell: > 
+103
+Please enter the amount that you want to sell: > 
+5
+     Sold  5 Quantity of:  Google Pixel 6        
+Product 103 --- Google Pixel 6        has been sold -- Quantity: 5
+
+ Milena's Stock List
+ ====================
+
+ ID 100: Apple iPhone 11        stock level: 0
+ ID 101: Apple iPhone 12        stock level: 0
+ ID 102: Apple iPhone 13        stock level: 0
+ ID 103: Google Pixel 6         stock level: 1
+ ID 104: Google Pixel 4a        stock level: 0
+ ID 106: Oppo Find X3 Neo       stock level: 0
+ ID 107: Samsung Galaxy S21     stock level: 0
+ ID 108: Samsung Galaxy Z Fold3 stock level: 0
+ ID 109: Samsung Galaxy A12     stock level: 0
+
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > 
+Your input is blank!
+
+Please enter your choice > print
+
+ Milena's Stock List
+ ====================
+
+ ID 100: Apple iPhone 11        stock level: 0
+ ID 101: Apple iPhone 12        stock level: 0
+ ID 102: Apple iPhone 13        stock level: 0
+ ID 103: Google Pixel 6         stock level: 1
+ ID 104: Google Pixel 4a        stock level: 0
+ ID 106: Oppo Find X3 Neo       stock level: 0
+ ID 107: Samsung Galaxy S21     stock level: 0
+ ID 108: Samsung Galaxy Z Fold3 stock level: 0
+ ID 109: Samsung Galaxy A12     stock level: 0
+
+********************************
+  App21-04: Stock Application 
+           by Milena          
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy the product(s)
+    Sell:       Sell the product(s)
+    Search:     Search the product(s) by name 
+    Low Stock:  Print the list of products whose stock are low
+    Re-Stock:   Re-Stock the product(s) whose stock are low
+
+Please enter your choice > 
