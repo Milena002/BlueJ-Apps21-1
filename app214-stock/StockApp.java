@@ -63,6 +63,30 @@ public class StockApp
         {
           removeProduct();
         }
+         else if(choice.equals("buy"))
+        {
+          buyProducts();
+        }
+         else if(choice.equals("sell"))
+        {
+          sellProducts();
+        }
+         else if(choice.equals("search"))
+        {
+          searchProducts();
+        }
+         else if(choice.equals("low stock"))
+        {
+          System.out.println("Printing the list of products with low stock ( <5) ");
+          stock.lowstock();
+        }
+        else if(choice.equals("re-stock"))
+        {
+          System.out.println("Re-stocking a Product(s) whose stock is low (<5)");
+          int qty  = reader.getInt("Please enter the amount you want to re-stock >");
+          stock.restock(qty);
+        }
+        
         return false;
     }
     
@@ -78,6 +102,7 @@ public class StockApp
         stock.add(product);
         System.out.println("Product " + product.getID() + " --- " + product.getName() 
         + " has been added to the list ");
+        stock.print();
     } 
     
     private void removeProduct()
@@ -97,6 +122,49 @@ public class StockApp
         {
             System.out.println ("This product number not exist !"); 
         }
+        stock.print();
+    }
+    
+    private void buyProducts()
+    {
+        System.out.println("Buying a Product(s)");
+        System.out.println();
+        stock.print();
+        
+        int id = reader.getInt("Please enter a product ID that you want to buy: > ");
+        int amount = reader.getInt("Please enter the amount that you want to buy: > "); 
+        Product product = stock.findProduct(id);
+        stock.buyProduct(id,amount);
+         System.out.println ("Product " + product.getID() + " --- " + product.getName() 
+        + "has been bought -- Quantity: " + amount );
+        stock.print();
+    }
+    
+     private void sellProducts()
+    {
+        System.out.println("Buying a Product(s)");
+        System.out.println();
+        stock.print();
+        
+        int id = reader.getInt("Please enter a product ID that you want to sell: > ");
+        int amount = reader.getInt("Please enter the amount that you want to sell: > "); 
+        Product product = stock.findProduct(id);
+        stock.sellProduct(id,amount);
+         System.out.println ("Product " + product.getID() + " --- " + product.getName() 
+        + "has been sold -- Quantity: " + amount );
+        stock.print();
+    }
+    
+     private void searchProducts()
+    {
+        System.out.println("Searching a Product(s) by name or phrase");
+        System.out.println();
+        System.out.println ("Here is product(s) contains this phrase");
+        
+        String phrase = reader.getString("Please enter a phrase,the products you are looking for  > ");
+        
+        stock.search(phrase);
+    
     }
     
     /**
@@ -109,6 +177,11 @@ public class StockApp
         System.out.println("    Remove:     Remove an old product");
         System.out.println("    Print:      Print all products");
         System.out.println("    Quit:       Quit the program");
+        System.out.println("    Buy:        Buy the product(s)");
+        System.out.println("    Sell:       Sell the product(s)");
+        System.out.println("    Search:     Search the product(s) by name ");
+        System.out.println("    Low Stock:  Print the list of products whose stock are low");
+        System.out.println("    Re-Stock:   Re-Stock the product(s) whose stock are low");
         System.out.println();        
     }
     

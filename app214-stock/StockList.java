@@ -172,21 +172,35 @@ public class StockList
     }
     
     /**
-     * This is a method, when printing a products whose stock are low ( for example <5)
+     * This is a method, when printing a products whose stock are low (in this case <5)
      */
-    public void lowstock(String phrase)
+    public void lowstock()
     {
         for(Product product : stock)
         {
             if(product.getQuantity() < 5 )
             {
-                System.out.println("<><><><><><><><><><><><><><><><><><><><><>");
-                System.out.println(" Products with low stock (less than 5) :  ");
-                System.out.println("<><><><><><><><><><><><><><><><><><><><><>");
-                System.out.println(product);
+                System.out.println(product.getName() + "has low stock");
+                
             }
         }
     }
+    
+   /**
+     * This is a method, whose re-stocking a products wchich stock are low ( in this case <5)
+     */
+    public void restock(int quantity)
+    {
+        for(Product product : stock)
+        {
+            if(product.getQuantity() < 5 )
+            {
+               int id = product.getID();
+               buyProduct(id,quantity);
+               System.out.println(product);
+            }
+        }
+    }    
     
     /** Print details of the given product. If found,
      * its name and stock quantity will be shown.
