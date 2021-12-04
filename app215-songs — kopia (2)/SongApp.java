@@ -80,7 +80,7 @@ public class SongApp
         Song song = new Song(id,name,artist,plays);
         songs.add(song);
         System.out.println("Song --" + song.getID()+ "-- Tittle: "+ song.getName() + " -- " + "Artist: "+
-        song.getArtist() +" -- " + "Plays: "+ song.getPlays() + "has been added to the list ");
+        song.getArtist() +" -- " + "Plays: "+ song.getPlays() + "--has been added to the list ");
         songs.print();
     } 
     

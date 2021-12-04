@@ -1,0 +1,135 @@
+Program.main({ });
+********************************
+    App21-05: ? MusicApp ?    
+           by Milena          
+********************************
+
+    Add:        Add a new song
+    Remove:     Remove an old song
+    Print:      Print all songs
+    Quit:       Quit the program
+    Search:     Search the songs(s) by tittle or artist 
+
+Please enter your choice > add
+ Adding a new Song ? 
+
+Please enter a song id/number : >
+110
+Please enter a song tittle: > 
+Your input is blank!
+
+Please enter a song tittle: > Baby                    
+Please enter a song author: >Justin Bieber             
+Please enter how many plays this song has: >
+9873920
+Song --110-- Tittle: Baby                     -- Artist: Justin Bieber              -- Plays: 9873920--has been added to the list 
+
+ Milena's MusicApp ? 
+ ====================
+
+100 Name of song: Beautiful                 Artist:  Anne-Marie                 Number of plays:  836015
+101 Name of song: Bad Habits                Artist:  Ed Sheeran                 Number of plays:  127191452
+102 Name of song: Halo                      Artist:  Beyonce                    Number of plays:  991888598
+103 Name of song: Clash                     Artist:  Dave,(feat.Stormzy)        Number of plays:  7070513
+104 Name of song: It Gets Better            Artist:  Swedish House Mafia        Number of plays:  7563930
+105 Name of song: You for me                Artist:  Rita Ora                   Number of plays:  7277470
+106 Name of song: Don't delete the kisses   Artist:  Wolf Alice                 Number of plays:  40759558
+107 Name of song: Holier Than Thou          Artist:  Biffy Clyro                Number of plays:  333054
+108 Name of song: Plastic Hearts            Artist:  Miley Cyrus                Number of plays:  78086810
+109 Name of song: Prisoner                  Artist:  Miley Cyrus(feat.Dua Lipa) Number of plays:  354144868
+110 Name of song: Baby                      Artist:  Justin Bieber              Number of plays:  9873920
+
+********************************
+    App21-05: ? MusicApp ?    
+           by Milena          
+********************************
+
+    Add:        Add a new song
+    Remove:     Remove an old song
+    Print:      Print all songs
+    Quit:       Quit the program
+    Search:     Search the songs(s) by tittle or artist 
+
+Please enter your choice > 
+Your input is blank!
+
+Please enter your choice > remove
+Removing an old Song
+
+
+ Milena's MusicApp ? 
+ ====================
+
+100 Name of song: Beautiful                 Artist:  Anne-Marie                 Number of plays:  836015
+101 Name of song: Bad Habits                Artist:  Ed Sheeran                 Number of plays:  127191452
+102 Name of song: Halo                      Artist:  Beyonce                    Number of plays:  991888598
+103 Name of song: Clash                     Artist:  Dave,(feat.Stormzy)        Number of plays:  7070513
+104 Name of song: It Gets Better            Artist:  Swedish House Mafia        Number of plays:  7563930
+105 Name of song: You for me                Artist:  Rita Ora                   Number of plays:  7277470
+106 Name of song: Don't delete the kisses   Artist:  Wolf Alice                 Number of plays:  40759558
+107 Name of song: Holier Than Thou          Artist:  Biffy Clyro                Number of plays:  333054
+108 Name of song: Plastic Hearts            Artist:  Miley Cyrus                Number of plays:  78086810
+109 Name of song: Prisoner                  Artist:  Miley Cyrus(feat.Dua Lipa) Number of plays:  354144868
+110 Name of song: Baby                      Artist:  Justin Bieber              Number of plays:  9873920
+
+Please enter a song ID which you want to remove:  > 
+104
+Removed song: 104
+Song has been removed from the list 
+
+ Milena's MusicApp ? 
+ ====================
+
+100 Name of song: Beautiful                 Artist:  Anne-Marie                 Number of plays:  836015
+101 Name of song: Bad Habits                Artist:  Ed Sheeran                 Number of plays:  127191452
+102 Name of song: Halo                      Artist:  Beyonce                    Number of plays:  991888598
+103 Name of song: Clash                     Artist:  Dave,(feat.Stormzy)        Number of plays:  7070513
+105 Name of song: You for me                Artist:  Rita Ora                   Number of plays:  7277470
+106 Name of song: Don't delete the kisses   Artist:  Wolf Alice                 Number of plays:  40759558
+107 Name of song: Holier Than Thou          Artist:  Biffy Clyro                Number of plays:  333054
+108 Name of song: Plastic Hearts            Artist:  Miley Cyrus                Number of plays:  78086810
+109 Name of song: Prisoner                  Artist:  Miley Cyrus(feat.Dua Lipa) Number of plays:  354144868
+110 Name of song: Baby                      Artist:  Justin Bieber              Number of plays:  9873920
+
+********************************
+    App21-05: ? MusicApp ?    
+           by Milena          
+********************************
+
+    Add:        Add a new song
+    Remove:     Remove an old song
+    Print:      Print all songs
+    Quit:       Quit the program
+    Search:     Search the songs(s) by tittle or artist 
+
+Please enter your choice > 
+Your input is blank!
+
+Please enter your choice > print
+
+ Milena's MusicApp ? 
+ ====================
+
+100 Name of song: Beautiful                 Artist:  Anne-Marie                 Number of plays:  836015
+101 Name of song: Bad Habits                Artist:  Ed Sheeran                 Number of plays:  127191452
+102 Name of song: Halo                      Artist:  Beyonce                    Number of plays:  991888598
+103 Name of song: Clash                     Artist:  Dave,(feat.Stormzy)        Number of plays:  7070513
+105 Name of song: You for me                Artist:  Rita Ora                   Number of plays:  7277470
+106 Name of song: Don't delete the kisses   Artist:  Wolf Alice                 Number of plays:  40759558
+107 Name of song: Holier Than Thou          Artist:  Biffy Clyro                Number of plays:  333054
+108 Name of song: Plastic Hearts            Artist:  Miley Cyrus                Number of plays:  78086810
+109 Name of song: Prisoner                  Artist:  Miley Cyrus(feat.Dua Lipa) Number of plays:  354144868
+110 Name of song: Baby                      Artist:  Justin Bieber              Number of plays:  9873920
+
+********************************
+    App21-05: ? MusicApp ?    
+           by Milena          
+********************************
+
+    Add:        Add a new song
+    Remove:     Remove an old song
+    Print:      Print all songs
+    Quit:       Quit the program
+    Search:     Search the songs(s) by tittle or artist 
+
+Please enter your choice > 
