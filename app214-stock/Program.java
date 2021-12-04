@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Program here.
+ * In this class Program,this app will be running.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author: Milena Michalska
+ * @version 0.1 03/12/21
  */
 public class Program
 {
