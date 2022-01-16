@@ -9,9 +9,7 @@
 public class SongApp
 {
     private InputReader reader;
-    
     private SongList songs;
-    
     /**
      * Constructor for objects of class SongApp
      */
