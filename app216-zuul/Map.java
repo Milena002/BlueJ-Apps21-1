@@ -4,18 +4,19 @@
  * linking all the Locations in the game to
  * form a 2D or 3D network
  *
- *  [Pub]<---->[Outside]<---->[Theatre]
- *                 |
- *          [Computer Lab]<---->[Office]
+ *  [Cotton Candy Meadow]---->[Chocolate Forrest]     [Cola Brook]----->[Gingerbread House]
+ *                                      |                   ^                   |
+ *                                      v                   |                   v
+ *                               [Lollies Cave]---->[Cookies Mine]       [Jellies Cage]----> [Besom Fire]
  *             
- * @author Derek Peacock and Nicholas Day
- * @version 2021-08-22
+ * @author Milena Michalska
+ * @version 1.0 12/2021
  */
 public class Map
 {
     // Need to add a list of exits
     
-    private Location outside, theater, pub, lab, office;
+    private Location meadow, forrest, cave, brook, mine, house, cage, fire;
 
     private Location currentLocation;
 
@@ -35,69 +36,121 @@ public class Map
      */
     private void createLocations()
     {
-        createOutside();
-        createTheatre();
-        createPub();
-        createOffice();
-        createLab();
+        createMeadow();
+        createForrest();
+        createCave();
+        createBrook();
+        createMine();
+        createHouse();
+        createCage();
+        createFire();
 
-        currentLocation = outside;  // start game outside
+        currentLocation = meadow;  // start game in cotton candy meadow
     }
     
     /**
-     * Create the outside and link it to the
-     * theatre, lab and pub
+     * Create the meadow and link it to the
+     * chocolate forrset - next location
      */
-    private void createOutside()
+    private void createMeadow()
     {
-        outside = new Location("outside the main entrance of the university");
-        
+        meadow = new Location("Cotton Candy Meadow - At the edge to the Chocolate Forrest");
+        meadow.setItem(new Item("CottonCandy","This CottonCandy allows you to come safety across the edge",101));
     }
     
     /**
      * Create the pub and link it to the outside
      */
-    private void createPub()
+    private void createForrest()
     {
-        pub = new Location("in the campus pub");
+        forrest= new Location("Chocolate Forrest");
         
-        pub.setExit("east", outside);
-        outside.setExit("west", pub);
+        forrest.setExit("west", meadow);
+        meadow.setExit("east", forrest);
+    }
+    
+    /**
+     * Create the pub and link it to the outside
+     */
+    private void createCave()
+    {
+        cave= new Location("Lollies Cave");
+        
+        cave.setExit("north", forrest);
+        cave.setExit("east",mine);
+        forrest.setExit("south", cave);
+        
+        cave.setItem(new Item("Lolly","This Lolly giving you a unlimited eating lollies whole life in game",102));
     }
     
     /**
      * Create the theatre linked to the outside
      */
-    private void createTheatre()
+    private void createMine()
     {
-        theater = new Location("in a lecture theater");
+        mine = new Location("Cookies Mine");
         
-        theater.setExit("west", outside);
-        outside.setExit("east", theater);
+        brook.setExit("south",mine);
+        mine.setExit("north",brook);
+        mine.setExit("west", cave);
+        cave.setExit("east",mine);
     }
     
     /**
      * Create the office linked to the lab
      */
-    private void createOffice()
+    private void createBrook()
     {
-        office = new Location("in the computing admin office");
+        brook= new Location("Cola Brook");
+        
+        brook.setExit("east",house);
+        brook.setExit("south",mine);
+        
+        
+        
+    }
+    
+    /**
+     * Create the Gingerbread house and link it to other locations
+     */
+    private void createHouse()
+    {
+        // create the Locations
+        house= new Location("Gingerbread House");
+        
+        brook.setExit("east", house);
+        house.setExit("south", cage);
+        house.setExit("west", brook);
+        
         
     }
     
     /**
      * Create the lab and link it to the outside and office
      */
-    private void createLab()
+    private void createCage()
     {
         // create the Locations
-        lab = new Location("in a computing lab");
+        cage= new Location("Jellies Cage");
         
-        lab.setExit("east", office);
-        office.setExit("west", lab);
+        house.setExit("south", cage);
+        cage.setExit("east", fire);
         
-        lab.setExit("north", outside);
-        outside.setExit("south", lab);
+        cage.setExit("north", house);
+        
+    }
+    
+    /**
+     * Create the lab and link it to the outside and office
+     */
+    private void createFire()
+    {
+        // create the Locations
+        fire= new Location("Besom Fire!");
+        
+        
+        fire.setExit("west", cage);
+        cage.setExit("east", fire);
     }
     
     public Location getCurrentLocation()

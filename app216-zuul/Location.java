@@ -5,34 +5,36 @@ import java.util.Iterator;
 /**
  * Class Location - a location on the map of an adventure game.
  *
- * This class is part of the "World of Zuul" application. 
- * "World of Zuul" is a very simple, text based adventure game.  
+ * This class is part of the CANDY WORLD application. 
+ * CANDY WORLD is a very simple, text based adventure game.  
  *
  * A "Location" represents one place in the scenery of the game.  It is 
  * connected to other locations via exits.  For each existing exit, the 
  * location stores a reference to the neighboring locations.
  * 
  * @author  Michael Kölling and David J. Barnes
- * Modified by Derek Peacock & Nicholas Day
+ * Milena Michalska
  * @version 2016.02.29
  */
 
 public class Location 
 {
     private String description;
-    private HashMap<String, Location> exits;        // stores exits of this room.
-
+    private HashMap<String, Location> exits; // stores exits of this room.
+    private Item item;
+    private HashMap<String,Item> items;
     /**
-     * Create a location described "description". Initially, it has
-     * no exits. "description" is something like "a kitchen" or
-     * "an open court yard".
+     * 
+     * description about locations
      */
     public Location(String description) 
     {
         this.description = description;
+        
         exits = new HashMap<>();
+        items= new HashMap<>();
     }
-
+     
     /**
      * Define an exit from this room.
      * @param direction The direction of the exit.
@@ -41,6 +43,11 @@ public class Location
     public void setExit(String direction, Location neighbor) 
     {
         exits.put(direction, neighbor);
+    }
+    
+    public void setItem(Item item)
+    {
+        this.item=item;
     }
 
     /**
@@ -60,7 +67,13 @@ public class Location
      */
     public String getLongDescription()
     {
-        return " You are " + description + ".\n" + getExitString();
+        String returnString = " You are " + description + "\n" + getExitString() ;
+        if(item!= null){
+            returnString = returnString.concat("\n Items include: " + item.getName());
+        }
+       
+        return returnString;
+        
     }
 
     /**
@@ -78,7 +91,29 @@ public class Location
         }
         return returnString;
     }
-
+      
+    public Item remove(String itemName)
+    {
+        Item oldItem = item;
+        if(this.item.getName().equals(itemName))
+        {
+            item=null;
+            return oldItem;
+        
+        }
+        else
+        return null;
+    }
+    
+     private String getItemString(){
+           if (item != null){
+           String returnString="Items : ";
+           returnString += item.getName() + " ";
+           return returnString;
+       }
+       return null ;
+    }
+       
     /**
      * Return the room that is reached if we go from this room in direction
      * "direction". If there is no room in that direction, return null.
